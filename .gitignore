@@ -1,0 +1,28 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+.build-staging/
+*.exe
+*.blockmap
+latest.yml
+
+# Environment and secrets
+.env
+.env.*
+*.token
+*token*.txt
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editors
+.vscode/
+.idea/

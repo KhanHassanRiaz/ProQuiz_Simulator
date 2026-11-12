@@ -1,0 +1,19 @@
+<svg width="1200" height="360" viewBox="0 0 1200 360" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="ProQuiz Simulator">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="360" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0B1120"/>
+      <stop offset="1" stop-color="#111827"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="96" y1="96" x2="640" y2="220" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#A5B4FC"/>
+      <stop offset="1" stop-color="#22D3EE"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="360" rx="24" fill="url(#bg)"/>
+  <circle cx="1040" cy="70" r="210" fill="#6366F1" fill-opacity="0.14"/>
+  <circle cx="1110" cy="300" r="140" fill="#22D3EE" fill-opacity="0.10"/>
+  <rect x="96" y="88" width="12" height="168" rx="6" fill="url(#accent)"/>
+  <text x="136" y="152" font-family="Segoe UI, Arial, sans-serif" font-size="56" font-weight="700" fill="url(#accent)">ProQuiz Simulator</text>
+  <text x="138" y="204" font-family="Segoe UI, Arial, sans-serif" font-size="24" fill="#CBD5E1">Study smarter for competitive exams.</text>
+  <text x="138" y="252" font-family="Segoe UI, Arial, sans-serif" font-size="18" fill="#94A3B8">Windows x64 · Offline-first · Timed quizzes · Mock papers · Auto-updates</text>
+</svg>
