@@ -18,6 +18,7 @@ class QuizSession {
         this.currentIndex = 0;
         this.startedAt = null;
         this.finishedAt = null;
+        this.repeatPassDone = false;
     }
 
     start(now = Date.now()) {
@@ -38,11 +39,17 @@ class QuizSession {
 
         if (this.currentIndex < this.questions.length - 1) {
             this.currentIndex += 1;
-        } else {
-            this.finishedAt = now;
-            if (this.repeatWrong) this.appendWrongQuestions();
+            return { correct };
         }
 
+        // Last question of the current pass. In smart mode, ask the wrong
+        // questions exactly one more time before finishing.
+        if (this.repeatWrong && !this.repeatPassDone) {
+            this.repeatPassDone = true;
+            if (this.appendWrongQuestions()) return { correct };
+        }
+
+        this.finishedAt = now;
         return { correct };
     }
 
@@ -52,14 +59,17 @@ class QuizSession {
             return answer && !answer.correct;
         });
 
-        if (wrong.length === 0) return;
+        if (wrong.length === 0) return false;
 
-        // In smart mode the wrong questions are asked once more. Their
-        // previous answers are cleared so the second pass is scored fresh.
+        // Previous answers are cleared so the second pass is scored fresh.
         for (const question of wrong) {
             this.answers.delete(question.id);
         }
+
+        const firstRepeatIndex = this.questions.length;
         this.questions = [...this.questions, ...wrong];
+        this.currentIndex = firstRepeatIndex;
+        return true;
     }
 
     get remainingSeconds() {
@@ -76,12 +86,12 @@ class QuizSession {
         return {
             correct,
             answered: this.answers.size,
-            total: this.questions.length
+            total: new Set(this.questions.map((question) => question.id)).size
         };
     }
 
     get isFinished() {
-        return this.answers.size >= this.questions.length;
+        return this.finishedAt !== null;
     }
 }
 

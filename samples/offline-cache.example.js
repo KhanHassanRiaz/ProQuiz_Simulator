@@ -15,7 +15,7 @@ const path = require('path');
 
 function cacheKey(resourcePath) {
     const normalized = resourcePath.replace(/\\/g, '/');
-    return crypto.createHash('sha1').update(normalized).digest('hex');
+    return crypto.createHash('sha256').update(normalized).digest('hex');
 }
 
 function readCachedJson(cacheDir, resourcePath) {

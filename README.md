@@ -50,7 +50,7 @@ the app is engineered.
 | **Bookmarks** | Save your position in both MCQ and subjective study modes. |
 | **Themes** | Light and dark themes. |
 | **Offline-first** | Content packs are bundled locally; studying does not depend on a network connection. |
-| **Auto-updates** | Signed release metadata (`latest.yml` + blockmap) lets installed apps update to new versions. |
+| **Auto-updates** | Release metadata (`latest.yml` + blockmap) lets installed apps verify and update to new versions. |
 
 ## Download
 
