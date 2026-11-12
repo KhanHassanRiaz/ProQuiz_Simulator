@@ -12,6 +12,8 @@
 <p align="center">
   <a href="https://github.com/KhanHassanRiaz/ProQuiz_Simulator/releases/latest"><strong>Download the latest release</strong></a>
   &nbsp;·&nbsp;
+  <a href="docs/USER_GUIDE.md">User guide</a>
+  &nbsp;·&nbsp;
   <a href="docs/ARCHITECTURE.md">Architecture</a>
   &nbsp;·&nbsp;
   <a href="docs/BUILD_AND_RELEASE.md">Build &amp; release</a>
@@ -114,7 +116,9 @@ See [docs/BUILD_AND_RELEASE.md](docs/BUILD_AND_RELEASE.md) for the full workflow
 ├── assets/                 Banner, screenshots and other public media
 ├── docs/
 │   ├── ARCHITECTURE.md     How the app is structured
-│   └── BUILD_AND_RELEASE.md  Versioning and release automation
+│   ├── BUILD_AND_RELEASE.md  Versioning and release automation
+│   ├── USER_GUIDE.md       Feature guide (English)
+│   └── USER_GUIDE_UR.md    Feature guide (Roman Urdu)
 ├── samples/                Sanitized, illustrative code samples
 ├── SECURITY.md
 └── LICENSE
