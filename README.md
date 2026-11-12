@@ -66,14 +66,22 @@ Each release publishes:
 
 ## Screenshots
 
-Screenshots are added to [`assets/screenshots/`](assets/screenshots/). Planned set:
+| Home dashboard | MCQ preparation hub |
+| --- | --- |
+| ![Home dashboard](assets/screenshots/home-dashboard.webp) | ![MCQ preparation hub](assets/screenshots/mcq-preparation.webp) |
+| Resume your last session and see your overall progress. | Pick a course, then choose Learn, Quiz, Instant Quiz, or Mock Exam. |
 
-- Home dashboard
-- Learn mode
-- Timed quiz
-- Mock exam generator
-- Subjective study with Roman Urdu
-- Dark theme
+| Learn mode | Quiz setup |
+| --- | --- |
+| ![Learn mode](assets/screenshots/learn-mode.webp) | ![Quiz setup](assets/screenshots/quiz-setup.webp) |
+| Read question banks with the correct answer always visible. | Choose a month, question range, timer, and smart mode. |
+
+| Quiz in progress | Mobile quiz view |
+| --- | --- |
+| ![Quiz in progress](assets/screenshots/quiz-in-progress.webp) | ![Mobile quiz view](assets/screenshots/mobile-quiz.webp) |
+| Timed practice with instant feedback and pause/resume. | The same question bank on the Android companion app. |
+
+<sub>Captured from ProQuiz Simulator v3.7.11 on Windows 11. More images live in [`assets/screenshots/`](assets/screenshots/).</sub>
 
 ## Tech stack
 
